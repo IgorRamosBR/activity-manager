@@ -57,7 +57,6 @@ export default function TaskList(props: TaskListProps) {
       currentActivity.tasks?.map(t => t.name === task.name ? updateTask(t) : t)
       let updatedActivity = await activity.update(currentActivity.id, currentActivity);
       setCurrentActivity(updatedActivity);
-      console.log(updatedActivity);
    };
 
    const updateTask = (task: activity.Task) => {

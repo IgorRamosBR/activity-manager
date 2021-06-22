@@ -36,7 +36,6 @@ export default function CurrentActivities() {
       setActivities([]);
 
       const _sprint = await SprintRepository.current();
-      console.log(_sprint);
       setActivities(_sprint.activities?.length > 0 ? _sprint.activities : []);
    };
 
